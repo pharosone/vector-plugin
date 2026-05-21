@@ -1,0 +1,24 @@
+{
+  "name": "vector",
+  "version": "0.1.0",
+  "description": "Red-team scanning for LLM agents from Gemini CLI",
+  "mcpServers": {
+    "vector": {
+      "command": "npx",
+      "args": [
+        "mcp-remote@latest",
+        "${VECTOR_MCP_URL:-https://mcp.pharosone.ai/mcp}",
+        "--header",
+        "x-vector-kya-mcp-consumer:plugin"
+      ]
+    }
+  },
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "Vector MCP URL",
+      "description": "Vector MCP endpoint URL (default: https://mcp.pharosone.ai/mcp). Set a custom URL if you are running a private Vector deployment.",
+      "envVar": "VECTOR_MCP_URL"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "vector",
+  "owner": {
+    "name": "Pharos One",
+    "email": "hello@pharosone.ai"
+  },
+  "description": "Red-team scanning for LLM agents",
+  "plugins": [
+    {
+      "name": "vector",
+      "source": "./",
+      "description": "Red-team scanning skills (integrate, harden-from-finding, batch-fix-findings, create-agent-context) plus the Vector MCP server pre-wired for OAuth.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Pharos One"
+      },
+      "category": "ai-tools",
+      "tags": [
+        "red-team",
+        "llm",
+        "security",
+        "ai-safety",
+        "mcp"
+      ]
+    }
+  ]
+}
