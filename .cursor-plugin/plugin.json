@@ -1,0 +1,21 @@
+{
+  "name": "vector",
+  "displayName": "Vector",
+  "version": "0.1.2",
+  "description": "Red-team scanning for LLM agents — integrate Vector in your repo, harden against findings, generate agent profiles",
+  "author": {
+    "name": "Pharos One",
+    "email": "hello@pharosone.ai",
+    "url": "https://pharosone.ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "red-team",
+    "llm",
+    "security",
+    "ai-safety",
+    "mcp",
+    "agent-testing"
+  ],
+  "logo": "assets/logo.svg"
+}

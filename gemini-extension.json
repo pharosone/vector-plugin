@@ -1,0 +1,24 @@
+{
+  "name": "vector",
+  "version": "0.1.2",
+  "description": "Red-team scanning for LLM agents from Gemini CLI",
+  "mcpServers": {
+    "vector": {
+      "command": "npx",
+      "args": [
+        "mcp-remote@latest",
+        "${VECTOR_MCP_URL:-https://vector-api.pharosone.ai/api/v1/mcp/}",
+        "--header",
+        "x-vector-kya-mcp-consumer:plugin"
+      ]
+    }
+  },
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "Vector MCP URL",
+      "description": "Vector MCP endpoint URL (default: https://vector-api.pharosone.ai/api/v1/mcp/). Trailing slash matters: the server 307-redirects bare /mcp \u2192 /mcp/ and some clients dislike that. Set a custom URL only for private Vector deployments.",
+      "envVar": "VECTOR_MCP_URL"
+    }
+  ]
+}

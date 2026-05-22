@@ -1,0 +1,44 @@
+{
+  "name": "vector",
+  "version": "0.1.2",
+  "description": "Red-team scanning for LLM agents — integrate Vector in your repo, harden against findings, generate agent profiles",
+  "author": {
+    "name": "Pharos One",
+    "email": "hello@pharosone.ai",
+    "url": "https://pharosone.ai"
+  },
+  "homepage": "https://pharosone.ai",
+  "repository": "https://github.com/pharosone/vector-plugin",
+  "license": "MIT",
+  "keywords": [
+    "red-team",
+    "llm",
+    "security",
+    "ai-safety",
+    "mcp",
+    "agent-testing"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json",
+  "interface": {
+    "displayName": "Vector",
+    "shortDescription": "Red-team scanning for LLM agents",
+    "longDescription": "Vector is a red-team control plane for LLM agents. This plugin connects Codex to the Vector MCP server and ships four skills that wire red-team scans into your codebase: build an adapter and CI step end-to-end, harden against single or batched FAIL verdicts, and generate AgentContext profiles for saved agents.",
+    "developerName": "Pharos One",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://pharosone.ai",
+    "privacyPolicyURL": "https://pharosone.ai/privacy",
+    "termsOfServiceURL": "https://pharosone.ai/terms",
+    "defaultPrompt": [
+      "Integrate Vector red-team scanning into this repo",
+      "Help me fix these failing red-team findings",
+      "Generate an AgentContext JSON for my LLM agent"
+    ],
+    "brandColor": "#7C3AED",
+    "logo": "./assets/logo.svg"
+  }
+}

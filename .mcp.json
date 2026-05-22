@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "vector": {
+      "type": "http",
+      "url": "https://vector-api.pharosone.ai/api/v1/mcp/",
+      "headers": {
+        "x-vector-kya-mcp-consumer": "plugin"
+      }
+    }
+  }
+}
